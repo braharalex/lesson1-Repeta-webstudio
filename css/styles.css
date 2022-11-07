@@ -1,0 +1,83 @@
+:root {
+    --primary-text-color: rgba(0, 0, 0, 0.8);
+    --title-text-color: #000000;
+    --accent-color: #18a0fb;
+    --primary-white-color: #ffffff;
+}
+
+body {
+    background-color: var(--primary-white-color);
+    color: var(--primary-text-color);
+}
+
+.logo {
+    color: var(--title-text-color);
+}
+
+.logo:hover,
+.logo:focus {
+    color: var(--accent-color);
+}
+
+/* Site-nav */
+
+.site-nav .link {
+    color: var(--accent-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--title-text-color);
+}
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+
+.list {
+    list-style: none;
+}
+
+/* Hero */
+.hero-title {
+    color:var(--title-text-color);
+}
+
+/* Section */
+.section-title {
+    color:var(--title-text-color);
+}
+
+.feature-list .title{
+    color:var(--title-text-color);
+}
+
+.feature-list .link {
+    color:var(--accent-color);
+}
+
+.button {
+    color:var(--title-text-color);
+    background-color: var(--primary-white-color);
+    font-size: 24px;
+    padding: 12px 24px;
+    display: inline-block;
+    border: 1px solid black;
+
+}
+
+.button.primary {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    border-color: transparent;
+}
+
+.button.secondary {
+    color:var(--accent-color);
+    background-color: var(--primary-white-color);
+    border-color: var(--accent-color);
+}
+
+
+

@@ -4,26 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <!-- Шапка -->
+     <!-- Шапка -->
     <header>
       <nav>
-        <a href="./index.html">
+        <a href="./index.html" class="logo">
         <img src="./images/logo.svg" alt="WebStudio logo">
         </a>
-        <ul>
-            <li><a href="">Features</a></li>
-            <li><a href="">Pricing</a></li>
-            <li><a href="">Community</a></li>
-            <li><a href="./support.html">Support</a></li>
-            <li><a href="./wireframes.html">Wireframes</a></li>
+        <ul class="site-nav list">
+            <li><a href="" target="_blank" class="link">Features</a></li>
+            <li><a href="" target="_blank" class="link">Pricing</a></li>
+            <li><a href="./community.html" target="_blank" class="link">Community</a></li>
+            <li><a href="" target="_blank" class="link">Support</a></li>
+            <li><a href="./wireframes.html" target="_blank" class="link">Wireframes</a></li>
         </ul>
-        <ul>
-          <li><a href="">Log in</a></li>
-          <li><a href="">Register</a></li>
+        <ul class="auth-nav list">
+          <li><a href="" class="button secondary">Log in</a></li>
+          <li><a href="" class="button primary">Register</a></li>
         </ul>
       </nav>
       <address>
@@ -33,12 +33,13 @@
         </ul>
       </address>   
     </header>
+
     <main>
     <!-- Герой -->
     <div>
-      <section>
-        <h1>The largest community of photo enthusiasts</h1>
-        <a href="">Join today</a>
+      <section class="hero">
+        <h1 class="hero-title">The largest community of photo enthusiasts</h1>
+        <a href="" class="button primary">Join today</a>
         <iframe width="400" height="200" src="https://www.youtube.com/embed/kl6iDdtf7-U"
           title="Сімпсони Українською БУДИНОЧОК ЖАХІВ НА ДЕРЕВІ ХЕЛЛОВІН #1" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -46,55 +47,55 @@
       </section>
     </div>
     <!-- Переваги -->
-    <section>
-      <h2>Snap photos and share like<br>never before</h2>
-      <ul>
+    <section class="section">
+      <h2 class="section-title">Snap photos and share like<br>never before</h2>
+      <ul class="feature-list">
         <li>
-          <h3>Lorem ipsum dolor sit.</h3>
+          <h3 class="title">Lorem ipsum dolor sit.</h3>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, molestias molestiae accusantium
           totam odio labore vero sint doloribus! Cum, nihil!</p>
-          <a href="">Learn more</a>
+          <a href="" class="button secondary">Learn more</a>
         </li>
         <li>
-          <h3>Lorem ipsum dolor sit amet.</h3>
+          <h3 class="title">Lorem ipsum dolor sit amet.</h3>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat et a quod minima neque! Enim?</p>
-          <a href="">Learn more</a>
+          <a href="" class="button secondary">Learn more</a>
         </li>
         <li>
-          <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+          <h3 class="title">Lorem ipsum dolor sit amet consectetur.</h3>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet repellendus architecto accusantium 
           iure magni eum officiis fugit optio!</p>
-          <a href="">Learn more</a>
+          <a href="" class="button secondary">Learn more</a>
         </li>
         <li>
-          <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+          <h3 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque itaque repellendus obcaecati nemo 
           iste reprehenderit dicta repellat et velit?</p>
-          <a href="">Learn more</a>
+          <a href="" class="button secondary">Learn more</a>
         </li>
       </ul>
     </section>
     <!-- Приклади робіт -->
-    <section>
-      <h2>Приклади робіт</h2>
+    <section class="section">
+      <h2 class="section-title">Приклади робіт</h2>
       <ul>
         <li>
           <img src="./images/9k.png" alt="White envelope" width="750">
-          <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+          <h3 class="section-title">Lorem ipsum dolor sit amet consectetur.</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, dolores repudiandae perferendis 
           architecto consequuntur at.</p>
         </li>
         <li>
           <img src="./images/аа.png" alt="Gold envelope" width="750">
-          <h3>Lorem ipsum dolor sit, amet consectetur adipisicing.</h3>
+          <h3 class="section-title">Lorem ipsum dolor sit, amet consectetur adipisicing.</h3>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse aspernatur quaerat perferendis similique
           nulla hic reprehenderit ea inventore.</p>
         </li>
       </ul>
     </section>
     <!-- Відгуки -->
-    <section>
-      <h2>Lorem, ipsum dolor sit amet consectetur adipisicing.</h2>
+    <section class="section">
+      <h2 class="section-title">Lorem, ipsum dolor sit amet consectetur adipisicing.</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing 
       elit. Quia. </p>
       <ul>
@@ -114,27 +115,27 @@
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, at. Quod commodi excepturi explicabo fugit, incidunt et mollitia 
       assumenda?</p>
       <div>
-        <a href="">Join Today</a>
-        <a href="">Contact Us</a>
+        <a href="" class="button primary">Join Today</a>
+        <a href="" class="button secondary">Contact Us</a>
       </div>
     </section>
     <!-- Body var.2 -->
-    <section>
-      <h2>Snap photos and share like never before</h2>
+    <section class="section">
+      <h2 class="section-title">Snap photos and share like never before</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus unde sit quam cupiditate, consequatur 
       sapiente praesentium deserunt?</p>
       <ul>
         <li>
-          <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+          <h3 class="section-title">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, amet consequatur!</p>
         </li>
         <li>
-          <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+          <h3 class="section-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat error, iure fuga doloremque architecto 
           voluptates quod, esse ut, iste praesentium a fugit.</p>
         </li>
         <li>
-          <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga.</h3>
+          <h3 class="section-title">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga.</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis aliquam hic commodi iusto iure adipisci 
           expedita in a!</p>
         </li>
@@ -142,31 +143,24 @@
       <img src="./images/9k.png" alt="white envelope" width="300">
     </section>
     <!-- Body var.3 -->
-    <section>
-      <h2>Snap photos and share like never before</h2>
+    <section class="section">
+      <h2 class="section-title">Snap photos and share like never before</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus unde sit quam cupiditate, consequatur
       sapiente praesentium deserunt?</p>
       <ul>
         <li>
           <img src="./images/9k.png" alt="white envelope" width="300">
-          <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
+          <h3 class="section-title">Lorem ipsum dolor sit amet consectetur adipisicing.</h3>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, amet consequatur!</p>
         </li>
         <li>
           <img src="./images/аа.png" alt="gold envelope" width="300">
-          <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+          <h3 class="section-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat error, iure fuga doloremque architecto
           voluptates quod, esse ut, iste praesentium a fugit.</p>
         </li>
-      </ul>
-      
-      
+      </ul> 
     </section>
-
-
-
-
-
     </main>
     <!-- Футер -->
     <footer>
