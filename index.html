@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Montserrat:wght@400;500;700&display=swap"
@@ -13,30 +15,34 @@
 </head>
 <body>
      <!-- Шапка -->
-    <header>
-      <nav>
-        <a href="./index.html" class="logo">
-        <img src="./images/logo.svg" alt="WebStudio logo">
-        </a>
-        <ul class="site-nav list">
-            <li><a href="" target="_blank" class="link">Features</a></li>
-            <li><a href="" target="_blank" class="link">Pricing</a></li>
-            <li><a href="./community.html" target="_blank" class="link">Community</a></li>
-            <li><a href="" target="_blank" class="link">Support</a></li>
-            <li><a href="./wireframes.html" target="_blank" class="link">Wireframes</a></li>
-        </ul>
-        <ul class="auth-nav list">
-          <li><a href="" class="button secondary">Log in</a></li>
-          <li><a href="" class="button primary">Register</a></li>
-        </ul>
-      </nav>
-      <address>
-        <ul class="list">
-          <li><a href="mailto:info@devstudio.com" class="address-link">info@devstudio.com</a></li>
-          <li><a href="tel:+380961111111" class="address-link">+38 096 111 11 11</a></li>
-        </ul>
-      </address>   
+    <header class="page-header">
+      <div class="container">
+        <nav class="main-nav">
+          <a href="./index.html" class="logo">
+            <img src="./images/logo.svg" alt="WebStudio logo">
+          </a>
+          <ul class="site-nav list">
+            <li class="item"><a class="link current" href="">Features</a></li>
+            <li class="item"><a class="link" href="">Pricing</a></li>
+            <li class="item"><a class="link" href="./community.html">Community</a></li>
+            <li class="item"><a class="link" href="">Support</a></li>
+            <li class="item"><a class="link" href="./wireframes.html">Wireframes</a></li>
+          </ul>
+          <ul class="auth-nav list">
+            <li class="item"><a class="button secondary" href="">Log in</a></li>
+            <li class="item"><a class="button primary" href="">Register</a></li>
+          </ul>
+        </nav>
+        <address>
+          <ul class="list">
+            <li><a class="address-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a class="address-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          </ul>
+        </address>
+      </div> 
     </header>
+
+    
 
     <main>
     <!-- Герой -->
@@ -44,62 +50,62 @@
       <section class="hero">
         <h1 class="hero-title">The largest community of photo enthusiasts</h1>
         <a href="" class="button primary">Join today</a>
-        <iframe width="400" height="200" src="https://www.youtube.com/embed/kl6iDdtf7-U"
-          title="Сімпсони Українською БУДИНОЧОК ЖАХІВ НА ДЕРЕВІ ХЕЛЛОВІН #1" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
       </section>
     </div>
     <!-- Переваги -->
     <section class="section">
-      <h2 class="section-title">Snap photos and share like<br>never before</h2>
+     <div class="container">
+      <h2 class="section-title centered">Snap photos and share like<br>never before</h2>
       <ul class="feature-list list">
-        <li>
+        <li class="item">
           <h3 class="title">Lorem ipsum dolor sit.</h3>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, molestias molestiae accusantium
-          totam odio labore vero sint doloribus! Cum, nihil!</p>
+            totam odio labore vero sint doloribus! Cum, nihil!</p>
           <a href="" class="button secondary">Learn more</a>
         </li>
-        <li>
+        <li class="item">
           <h3 class="title">Lorem ipsum dolor sit amet.</h3>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat et a quod minima neque! Enim?</p>
           <a href="" class="button secondary">Learn more</a>
         </li>
-        <li>
+        <li class="item">
           <h3 class="title">Lorem ipsum dolor sit amet consectetur.</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet repellendus architecto accusantium 
-          iure magni eum officiis fugit optio!</p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet repellendus architecto accusantium
+            iure magni eum officiis fugit optio!</p>
           <a href="" class="button secondary">Learn more</a>
         </li>
-        <li>
+        <li class="item">
           <h3 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque itaque repellendus obcaecati nemo 
-          iste reprehenderit dicta repellat et velit?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque itaque repellendus obcaecati nemo
+            iste reprehenderit dicta repellat et velit?</p>
           <a href="" class="button secondary">Learn more</a>
         </li>
       </ul>
+     </div>
     </section>
     <!-- Приклади робіт -->
-    <section class="section">
-      <h2 class="section-title">Приклади робіт</h2>
-      <ul class="work-list list">
-        <li>
-          <img src="./images/9k.png" alt="White envelope" width="750">
-          <h3 class="title">Lorem ipsum dolor sit amet consectetur.</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, dolores repudiandae perferendis 
-          architecto consequuntur at.</p>
-        </li>
-        <li>
-          <img src="./images/аа.png" alt="Gold envelope" width="750">
-          <h3 class="title">Lorem ipsum dolor sit, amet consectetur adipisicing.</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse aspernatur quaerat perferendis similique
-          nulla hic reprehenderit ea inventore.</p>
-        </li>
-      </ul>
+    <section class="section no-padding">
+      <div class="container">
+        <h2 class="section-title">Приклади робіт</h2>
+        <ul class="work-list list">
+          <li class="item">
+            <img src="./images/9k.png" alt="White envelope" width="750">
+            <h3 class="title">Lorem ipsum dolor sit amet consectetur.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, dolores repudiandae perferendis
+              architecto consequuntur at.</p>
+          </li>
+          <li class="item">
+            <img src="./images/аа.png" alt="Gold envelope" width="750">
+            <h3 class="title">Lorem ipsum dolor sit, amet consectetur adipisicing.</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse aspernatur quaerat perferendis similique
+              nulla hic reprehenderit ea inventore.</p>
+          </li>
+        </ul>
+      </div>
     </section>
     <!-- Відгуки -->
     <section class="section">
-      <h2 class="section-title">You're in a good company</h2>
+      <h2 class="section-title centered">You're in a good company</h2>
       <p class="section-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing 
       elit. Quia. </p>
       <ul class="list">

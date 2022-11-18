@@ -4,6 +4,15 @@
     --accent-color: #18a0fb;
     --primary-white-color: #ffffff;
 }
+html {
+    box-sizing: border-box;
+}
+
+/* *,
+*::before,
+*::after {
+    box-sizing: inherit;
+} */
 
 body {
     background-color: var(--primary-white-color);
@@ -18,15 +27,67 @@ h1,h2,h3,h4,h5,h6 {
     font-family: Comfortaa, cursive;
 }
 
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-left:auto;
+    margin-right: auto;
+    max-width: 1440px;
+    outline: 2px dashed tomato;
+
+}
+
+.page-header {
+    background-color: #ccc;
+} 
+
+.main-nav {
+    display: flex;
+    align-items: center;
+}
 
 /* Site-nav */
+.site-nav {
+    display: flex;
+    margin-left: 70px;
+}
+
+.site-nav .item {
+    /* margin-right: 40px; */
+}
+
+/* .site-nav .item:last-child {
+    margin-right: 0;
+} */
+
+/* .site-nav .item:not(:last-child) {
+    margin-right: 40px;
+} */
+
+.site-nav .item + .item {
+    margin-left: 40px;
+}
+
 
 .site-nav .link {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
     color: var(--accent-color);
     font-weight: 500;
     font-size: 15px;
     line-height: 1.2;
-    text-decoration: none;
+    text-decoration: none;  
 }
 
 .site-nav .link:hover,
@@ -35,31 +96,57 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .site-nav .link.current {
-    color: var(--accent-color);
+    color: var(--title-text-color);
+}
+
+.auth-nav {
+    display: flex;
+    margin-left: auto;
+}
+
+.auth-nav .item + .item {
+    margin-left: 12px;
 }
 
 .address-link {
     text-decoration: none;
-}
-
-
-.list {
-    list-style: none;
+    font-style:normal;
+    color: var(--accent-color);
 }
 
 /* Hero */
-.hero-title {
-    color:var(--title-text-color);
+.hero {
+    text-align: center;
+    outline: 1px solid tomato;
+}
 
+.hero-title {
+    margin-top: 0;
+    margin-bottom: 40px;
+
+    color:var(--title-text-color);
     font-weight: 400;
     font-size: 56px;
     line-height: 1.43;
-    text-align: center;
-    
 }
 
+/* Переваги */
+
+
 /* Section */
+.section {
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+
+.section.no-padding {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 .section-title {
+    margin-top: 0;
+    margin-bottom: 0;
     color:var(--title-text-color);
 
     font-weight: 400;
@@ -68,14 +155,34 @@ h1,h2,h3,h4,h5,h6 {
     text-align: center;
 }
 
+.section-title.centered {
+    text-align: center;
+}
+
 .section-description {
+    margin-top: 0;
+    margin-bottom: 80px;
     font-size:36px;
     line-height: 1.39;
 }
 
 /* Features and Examples */
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.feature-list .item {
+    width: 300px;
+    background-color: tomato;
+}
+
 .feature-list .title,
 .work-list .title {
+    margin-top: 0;
+    margin-bottom: 24px;
+
     color:var(--title-text-color);
 
     font-weight: 700;
@@ -88,29 +195,69 @@ h1,h2,h3,h4,h5,h6 {
     color:var(--accent-color);  
 }
 
-button {
-    font-family: inherit;
+.feature-list p {
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+.work-list > .item {
+    padding-top: 80px;
+    padding-bottom: 80 px;
 }
 
+.work-list > .item:nth-child(even) {
+    background-color: red;
+
+}
+
+button {
+    font-family: inherit;
+
+}
+
+
+
+
+
+
+
 .button {
+    display: inline-block;
+    border-radius: 6px;
+    padding: 11px 34px;
+    min-width: 132px;
+    border: 1px solid transparent;
+
+
     color:var(--title-text-color);
     background-color: var(--primary-white-color);
     font-weight: 500;
     font-size: 15px;
     line-height: 1.2;
+    text-align: center;
     text-decoration: none;
-    
 
 }
 
 .button.primary {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
-    border-color: transparent;
 }
 
 .button.secondary {
     color:var(--accent-color);
     background-color: var(--primary-white-color);
+    /* border: 1px solid var(--accent-color); */
     border-color: var(--accent-color);
+}
+
+.button.primary:hover {
+    color: var(--accent-color);
+    background-color: var(--primary-white-color);
+    /* border: 1px solid var(--accent-color); */
+    border-color: var(--accent-color);
+}
+
+.button.secondary:hover {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
 }
